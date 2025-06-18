@@ -9,13 +9,80 @@
 </head>
 <body>
     <header>
-        <img src="./inkskoray.png" alt="">  
-        <a href="google.com">HOME</a>
-        <a href="">ABOUT</a>
-        <a href="">CONTACT</a>
-        <a href="">SEVICES</a>
-        <button>SIGN UP</button>
+        <img src="./inkskoray.png" alt="Car Wash Logo">  
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#services">SERVICES</a>
+        </nav>
+        <button id="signup-btn">SIGN UP</button>
     </header>
+
+    <section id="home" class="section">
+        <h1>Welcome to Inkskoray Car Wash</h1>
+        <p>Your car deserves the best care. Experience premium car wash services with us.</p>
+        <img src="./inkskoray.png" alt="Car Wash" class="home-image">
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Inkskoray Car Wash has been serving the community with top-notch car cleaning and detailing services for over 10 years. Our mission is to provide quality, convenience, and care for your vehicle.</p>
+        <p>We use eco-friendly products and the latest technology to ensure your car shines like new.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Exterior Wash & Wax</li>
+            <li>Interior Vacuum & Shampoo</li>
+            <li>Full Detailing Packages</li>
+            <li>Engine Cleaning</li>
+            <li>Headlight Restoration</li>
+            <li>Fleet Services for Businesses</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to book a service? Reach out to us!</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="booking" class="section">
+        <h2>Book a Service</h2>
+        <form id="booking-form">
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="">--Please choose an option--</option>
+                <option value="exterior">Exterior Wash & Wax</option>
+                <option value="interior">Interior Vacuum & Shampoo</option>
+                <option value="detailing">Full Detailing Package</option>
+                <option value="engine">Engine Cleaning</option>
+                <option value="headlight">Headlight Restoration</option>
+                <option value="fleet">Fleet Services</option>
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
 
     <script src="./index.js"></script>
 </body>
